@@ -5,8 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css" />
-    <title>Hello, world!</title>
+    <script src="./js/main.js"></script>
+    <title>SafeProtocol</title>
   </head>
   <body>
     <header>
@@ -33,13 +35,172 @@
                 </div>
             </div>
         </nav>
+        <nav class="mobile-navbar">
+            <div class="company-box">
+                <img class="logo" src="./images/safeprotocol-logo.png" alt="safeprotocol-logo" />
+                <h2 class="title">Safeprotocol</h2>
+            </div>
+            <div class="menus" id="mobileMenus">
+                <ul class="menu-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Whitepaper</a></li>
+                    <li><a href="#">Roadmap</a></li>
+                    <li><a href="#">Tokenomics</a></li>
+                </ul>
+                <div class="price-box">
+                    <img class="icon" src="./images/safeprotocol-logo.png" alt="coin-icon"/>
+                    <span class="value">$6.999</span>
+                </div>
+                <div class="launch-box">
+                    <a href="#" class="link">Launch App</a>
+                </div>
+            </div>
+            <div class="hamburger-icon">
+                <i class="fa fa-bars" onclick="toggleMobileNavbar()"></i>
+            </div>
+        </nav>
     </header>
     <div class="hero-section">
         <img class="banner-img" src="./images/hero-banner.png" alt="hero-banner"/>
-        <h1>MAIN</h1>
+        <div class="content">
+            <h1>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</h1>
+            <h5>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</h5>
+            <a  class="launch-link" href="#">Launch App</a>
+        </div>
     </div>
+    <div class="market-section">
+        <div class="market-box cs-container">
+            <div class="item">
+                <img src="./images/market/coinbase-text.svg" alt="coinbase-text"/>
+            </div>
+            <div class="item">
+                <img src="./images/market/blockchain-text.svg" alt="blockchain-text"/>
+            </div>
+            <div class="item">
+                <img src="./images/market/binance-text.svg" alt="binance-text"/>
+            </div>
+            <div class="item">
+                <img src="./images/market/bitmex-text.svg" alt="bitmex-text"/>
+            </div>
+        </div>
+    </div>
+    <div class="our-service-section">
+        <div class="service-box cs-container">
+            <h5>enim velit mollit enim velit</h5>
+            <h2>get Whitepaper</h2>
+            <h2>enim velit mollit enim velit </h2>
+            <button>See More</button>
+        </div>
+    </div>
+    <div class="our-roadmap-section">
+        <div class="roadmap-box">
+            <h2 class="headline cs-container">Our Project Roadmap</h2>
+            <div class="timeline">
+                <div class="box">
+                    <h1 class="serial ms-45">01</h1>
+                    <div class="details">
+                        <h5 class="title">A Lorem Ipsum is Simply</h5>
+                        <p class="description">A Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's  standard dummy text ever since the 1500s, when an unknown</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <h1 class="serial me-45">02</h1>
+                    <div class="details">
+                        <h5 class="title">A Lorem Ipsum is Simply</h5>
+                        <p class="description">A Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's  standard dummy text ever since the 1500s, when an unknown</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <h1 class="serial ms-45">03</h1>
+                    <div class="details">
+                        <h5 class="title">A Lorem Ipsum is Simply</h5>
+                        <p class="description">A Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's  standard dummy text ever since the 1500s, when an unknown</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <h1 class="serial me-45">04</h1>
+                    <div class="details">
+                        <h5 class="title">A Lorem Ipsum is Simply</h5>
+                        <p class="description">A Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's  standard dummy text ever since the 1500s, when an unknown</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="our-tokenomics-section">
+        <div class="tokenomics-box cs-container">
+            <h2 class="headline">Tokenomics</h2>
+            <div class="content">
+                <div class="token-details">
+                    <div class="row dashed-border">
+                        <div class="col-1">
+                            <div class="item"><span class="red-circle"></span></div>
+                        </div>
+                        <div class="col-4">
+                            <div class="item price-box">
+                                <h5 class="title">Lorem</h5>
+                                <p class="value">$27.4 Billions</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item date-box">
+                                <h5 class="title">Lorem Ipsum</h5>
+                                <p class="value">13 Mar 2023</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="item percentage-box">
+                                <h5 class="title">$08,256.04</h5>
+                                <p class="value green-percentage">+$51.19 (+5.64%)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart">
+                    <img src="./images/token-pie-chart.png" alt="tokenomics"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <div class="faq-box cs-container">
+            <h2 class="headline">Frequent ask qustions</h2>
+            <div class="quotes">
+                Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet, lectus aliquam est in neque.
+            </div>
+            <div class="question-boxes">
+                <div class="box">
+                    <div class="question">
+                        <h5>Lorem Ipsum is a simply ?</h5>
+                        <div class="extend-button">
+
+                        </div>
+                    </div>
+                    <div class="answer">
+                            
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="question">
+                        <h5>Lorem Ipsum is a simply lorem ?</h5>
+                        <span class="extend-button">
+
+                        </span>
+                    </div>
+                    <div class="answer">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="free-circle">
+
+        </div>
+    </div>
+
     <footer class="footer">
-        <div class="container content">
+        <div class="container content cs-container">
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                     <div class="column">
@@ -107,5 +268,6 @@
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
   </body>
 </html>
