@@ -8,10 +8,31 @@ ul{
     padding: 0;
     margin: 0;
 }
-
+.m-s-e-0{
+    margin-right: 0;
+    margin-left: 0;
+}
 .cs-container{
     margin-left: 60px;
     margin-right: 60px;
+}
+@media (max-width: 769px) {
+    .cs-container{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+@media (max-width: 576px) {
+    .cs-container{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+@media (max-width: 431px) {
+    .cs-container{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
 /* BEGIN HEADER */
@@ -198,12 +219,12 @@ ul{
 }
 .hero-section .content{
     position: absolute;
-    top: 20%;
+    top: 15%;
     display: flex;
     flex-direction: column;
     gap: 22px;
     align-items: center;
-    margin: 0px 18vw;
+    margin: 0px 17vw;
 }
 .hero-section .content h1{
     text-align: center;
@@ -216,13 +237,15 @@ ul{
     color: #FFFFFF;
 }
 .hero-section .content h5{
+    margin: 0px 7vw;
     text-align: center;
     font-weight: 300;
     font-size: 20px;
     color: #FFFFFF;
 }
 .hero-section .content .launch-link{
-    padding: 10px 40px 13px 40px;
+    margin-top: 50px;
+    padding: 6px 40px 10px 40px;
     background: linear-gradient(270deg, #40D8AB 0%, #35A8E1 100%);
     box-shadow: 0px 0px 18px -4px #0ff;
     border-radius: 12px;
@@ -262,6 +285,7 @@ ul{
     }
     .hero-section .content h5{
         font-size: 12px;
+        margin:0;
     }
     .hero-section .content .launch-link{
         margin-top: 5px;
@@ -279,6 +303,7 @@ ul{
     }
     .hero-section .content h5{
         font-size: 10px;
+        margin: 0;
     }
     .hero-section .content .launch-link{
         margin-top: 15px;
@@ -447,20 +472,19 @@ ul{
     color: #070C0B;
     -webkit-text-stroke: 2px #1F4439;
 }
-.roadmap-box .timeline .box:nth-child(odd) .details{
+.roadmap-box .timeline .box .details{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 4px;
+    margin-top: 10px;
+}
+.roadmap-box .timeline .box:nth-child(odd) .details{
+    align-items: flex-start;
     text-align: start;
 }
 .roadmap-box .timeline .box:nth-child(even) .details{
-    display: flex;
-    flex-direction: column;
     align-items: flex-end;
-    justify-content: flex-end;
-    gap: 4px;
     text-align: end;
 }
 
@@ -474,12 +498,13 @@ ul{
     font-weight: 400;
     font-size: 18px;
     color: #80AB9E;
+    margin-bottom: 0;
 }
 .roadmap-box .timeline .box:nth-child(even) .details .description{
-    margin-left: 200px;
+    margin-left: 30vw;
 }
 .roadmap-box .timeline .box:nth-child(odd) .details .description{
-    margin-right: 200px;
+    margin-right: 30vw;
 }
 .ms-45{
     margin-left: 45px;
@@ -601,6 +626,9 @@ ul{
 .tokenomics-box .content .token-details .percentage-box{
     align-items: flex-end;
 }
+.tokenomics-box .content .token-details .percentage-box p{
+    text-align: end;
+}
 .dashed-border{
     border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
 }
@@ -669,6 +697,7 @@ ul{
     align-items: center;
     justify-content: center;
     gap: 8px;
+    margin: 0px 20vw;
 }
 .faq-box .headline{
     font-weight: 600;
@@ -680,7 +709,7 @@ ul{
 }
 .faq-box .quotes{
     font-weight: 400;
-    font-size: 20px;
+    font-size: 21px;
     text-align: center;
     letter-spacing: 0.2px;
     text-transform: capitalize;
@@ -729,11 +758,14 @@ ul{
     .faq-section{
         margin: 95px 0px;
     }
+    .faq-section .faq-box{
+        margin: 0;
+    }
     .faq-box .headline{
         font-size: 35px;
     }
     .faq-box .quotes{
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 @media (max-width:576px) {
@@ -757,7 +789,7 @@ ul{
 }
 /* bootsrap class change */
 .accordion{
-    margin: 0px 11vw;
+    /* margin: 0px 11vw; */
 }
 .accordion-item{
     background: #060606;
@@ -780,6 +812,7 @@ ul{
 @media (max-width:769px) {
     .accordion{
         margin: 0;
+        width: 110%;
     }
 }
 /* END FAQ SECTION */
@@ -791,7 +824,7 @@ ul{
     background-size: cover;
 }
 .footer .content{
-    padding: 35px 10px;
+    padding: 35px 0px;
 }
 .footer .content .column .title{
     font-weight: 700;
