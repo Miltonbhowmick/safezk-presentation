@@ -251,7 +251,40 @@ ul{
         font-size: 22px;
     }
 }
-
+@media (max-width:576px) {
+    .hero-section .content{
+        top: 15%;
+        gap:8px;
+    }
+    .hero-section .content h1{
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .hero-section .content h5{
+        font-size: 12px;
+    }
+    .hero-section .content .launch-link{
+        margin-top: 5px;
+        font-size: 12px;
+    }
+}
+@media (max-width:431px) {
+    .hero-section .content{
+        top: 15%;
+        gap: 5px;
+    }
+    .hero-section .content h1{
+        font-weight: 700;
+        font-size: 14px;
+    }
+    .hero-section .content h5{
+        font-size: 10px;
+    }
+    .hero-section .content .launch-link{
+        margin-top: 15px;
+        font-size: 10px;
+    }
+}
 /* END HERO SECTION */
 
 /* BEGIN MARKET SECTION */
@@ -282,6 +315,24 @@ ul{
     .market-section .market-box .item img{
         width: 80%;
     }
+}
+@media (max-width:576px) {
+    .market-section{
+        margin-top: -30px;
+    }
+    .market-section .market-box{
+        padding: 20px 40px;
+        text-align: center;
+    }
+}
+@media (max-width:431px) {
+    .market-section .market-box{
+        padding: 10px 40px;
+    }
+    .market-section .market-box .item img{
+        width: 80%;
+    }
+
 }
 /* END MARKET SECTION */
 
@@ -325,7 +376,32 @@ ul{
 @media (max-width:769px) {
     .our-service-section{
         margin-top: 110px;
-        margin-bottom: 140px;
+        margin-bottom: 50px;
+    }
+    .our-service-section .service-box h2{
+        font-size: 30px;
+        text-align: center;
+    }
+    .our-service-section .service-box h5{
+        font-size: 16px;
+        text-align: center;
+    }
+}
+@media (max-width:576px) {
+    .our-service-section .service-box{
+        gap: 10px;
+    }
+    .our-service-section{
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+    .our-service-section .service-box h2{
+        font-size: 22px;
+        text-align: center;
+    }
+    .our-service-section .service-box h5{
+        font-size: 14px;
+        text-align: center;
     }
 }
 /* END SERVICE SECTION */
@@ -360,7 +436,12 @@ ul{
     border-radius: 0px 295.228px 295.228px 0px;
     margin-right: 120px;
 }
-.roadmap-box .timeline .box .serial{
+.roadmap-box .timeline .box .serial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.roadmap-box .timeline .box .serial .number{
     font-size: 6.5rem;
     margin-bottom: 0;
     color: #070C0B;
@@ -390,7 +471,15 @@ ul{
 }
 
 .roadmap-box .timeline .box .details .description{
+    font-weight: 400;
+    font-size: 18px;
     color: #80AB9E;
+}
+.roadmap-box .timeline .box:nth-child(even) .details .description{
+    margin-left: 200px;
+}
+.roadmap-box .timeline .box:nth-child(odd) .details .description{
+    margin-right: 200px;
 }
 .ms-45{
     margin-left: 45px;
@@ -401,7 +490,65 @@ ul{
 @media (max-width:769px) {
     .roadmap-box .headline{
         text-align: center;
+        font-size: 35px;
     }
+    .roadmap-box .timeline .box:nth-child(odd){
+        margin-left: 65px;
+    }
+    .roadmap-box .timeline .box:nth-child(even){
+        margin-right: 65px;
+    }
+    .roadmap-box .timeline .box .details .title{
+        font-size: 20px;
+    }
+    .roadmap-box .timeline .box .details .description{
+        font-size: 16px;
+    }
+    .roadmap-box .timeline .box:nth-child(even) .details .description{
+        margin-left: 100px;
+    }
+    .roadmap-box .timeline .box:nth-child(odd) .details .description{
+        margin-right: 100px;
+    }    
+}
+@media (max-width:576px) {
+    .roadmap-box .headline{
+        text-align: center;
+        font-size: 30px;
+    }
+    .roadmap-box .timeline .box:nth-child(odd){
+        margin-left: 65px;
+    }
+    .roadmap-box .timeline .box:nth-child(even){
+        margin-right: 65px;
+    }
+    .roadmap-box .timeline .box .serial{
+        font-size: 6.5rem;
+    }
+    .roadmap-box .timeline .box .details .title{
+        font-size: 16px;
+    }
+    .roadmap-box .timeline .box .details .description{
+        font-size: 12px;
+    }
+    .roadmap-box .timeline .box:nth-child(even) .details .description{
+        margin-left: 30px;
+    }
+    .roadmap-box .timeline .box:nth-child(odd) .details .description{
+        margin-right: 30px;
+    }   
+}
+@media (max-width:431px) {
+    .roadmap-box .headline{
+        font-size: 25px;
+    }
+    .roadmap-box .timeline .box:nth-child(odd){
+        margin-left: 25px;
+    }
+    .roadmap-box .timeline .box:nth-child(even){
+        margin-right: 25px;
+    }
+
 }
 /* END ROADMAP SECTION */
 
@@ -471,9 +618,42 @@ ul{
     border-radius: 50%;
 }
 @media (max-width:769px) {
+    .our-tokenomics-section{
+        margin-top: 80px;
+    }    
+    .tokenomics-box .content{
+        flex-direction: column;
+        gap: 50px;
+    }
     .tokenomics-box .headline{
         text-align: center;
-    }   
+        font-size: 35px;
+    }
+    .tokenomics-box .content .token-details .item .title{
+        font-size: 13px;
+        margin: 2px 0px;
+    }
+    .tokenomics-box .content .token-details .item .value{
+        font-size: 12px;
+    }
+}
+@media (max-width:576px) {
+    .our-tokenomics-section{
+        margin-top: 70px;
+    }    
+    .tokenomics-box .content{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .tokenomics-box .headline{
+        text-align: center;
+        font-size: 30px;
+    }
+}
+@media (max-width:431px) {
+    .tokenomics-box .headline{
+        font-size: 25px;
+    }
 }
 /* END TOKENOMICS SECTION */
 
@@ -545,7 +725,60 @@ ul{
     height: 100px;
     border-radius: 50%;
 }
-
+@media (max-width:769px) {
+    .faq-section{
+        margin: 95px 0px;
+    }
+    .faq-box .headline{
+        font-size: 35px;
+    }
+    .faq-box .quotes{
+        font-size: 16px;
+    }
+}
+@media (max-width:576px) {
+    .faq-section{
+        margin: 85px 0px;
+    }
+    .faq-box .headline{
+        font-size: 30px;
+    }
+    .faq-box .quotes{
+        font-size: 13px;
+    }
+}
+@media (max-width:431px) {
+    .faq-box .headline{
+        font-size: 25px;
+    }
+    .faq-box .quotes{
+        font-size: 12px;
+    }
+}
+/* bootsrap class change */
+.accordion{
+    margin: 0px 11vw;
+}
+.accordion-item{
+    background: #060606;
+    color: #FFFFFF;
+}
+.accordion-button{
+    background: #060606;    
+    color: #FFFFFF;
+}
+.accordion-button:not(.collapsed) {
+    background: #060606;
+    color: #FFFFFF;
+}
+.accordion-button::after{
+    
+}
+@media (max-width:769px) {
+    .accordion{
+        margin: 0;
+    }
+}
 /* END FAQ SECTION */
 
 /* BEGIN FOOTER */
@@ -555,7 +788,7 @@ ul{
     background-size: cover;
 }
 .footer .content{
-    padding: 35px 0px;
+    padding: 35px 10px;
 }
 .footer .content .column .title{
     font-weight: 700;
@@ -633,7 +866,27 @@ ul{
 }
 .social-list li{
     display: inline;
+    margin: 0px 3px;
 }
+.social-list li a{
+    padding: 8px 12px 13px 12px;
+    border: 1px solid #373A51;
+    border-radius: 8px;
+    cursor: pointer;
+}
+@media (max-width:769px) {
+    .footer .content .column{
+        margin-top: 14px;
+    }
+    .footer .content .column .list{
+        margin: 0;
+    }
+    .footer-bottom{
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
 /* END FOOTER */
 
 

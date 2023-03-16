@@ -19,10 +19,10 @@
             </div>
             <div class="nav-menus">
                 <ul class="menu-links">
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Whitepaper</a></li>
-                    <li><a href="#">Roadmap</a></li>
-                    <li><a href="#">Tokenomics</a></li>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#whitepaper">Whitepaper</a></li>
+                    <li><a href="#roadmap">Roadmap</a></li>
+                    <li><a href="#tokenomics">Tokenomics</a></li>
                 </ul>
             </div>
             <div class="nav-menus">
@@ -42,10 +42,10 @@
             </div>
             <div class="menus" id="mobileMenus">
                 <ul class="menu-links">
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Whitepaper</a></li>
-                    <li><a href="#">Roadmap</a></li>
-                    <li><a href="#">Tokenomics</a></li>
+                    <li><a href="#home" class="active" onclick="toggleMobileNavbar()">Home</a></li>
+                    <li><a href="#whitepaper" onclick="toggleMobileNavbar()">Whitepaper</a></li>
+                    <li><a href="#roadmap" onclick="toggleMobileNavbar()">Roadmap</a></li>
+                    <li><a href="#tokenomics" onclick="toggleMobileNavbar()">Tokenomics</a></li>
                 </ul>
                 <div class="price-box">
                     <img class="icon" src="./images/safeprotocol-logo.png" alt="coin-icon"/>
@@ -60,7 +60,7 @@
             </div>
         </nav>
     </header>
-    <div class="hero-section">
+    <div class="hero-section" id="home">
         <img class="banner-img" src="./images/hero-banner.png" alt="hero-banner"/>
         <div class="content">
             <h1>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</h1>
@@ -84,7 +84,7 @@
             </div>
         </div>
     </div>
-    <div class="our-service-section">
+    <div class="our-service-section" id="whitepaper">
         <div class="service-box cs-container">
             <h5>enim velit mollit enim velit</h5>
             <h2>get Whitepaper</h2>
@@ -92,33 +92,33 @@
             <button>See More</button>
         </div>
     </div>
-    <div class="our-roadmap-section">
+    <div class="our-roadmap-section" id="roadmap">
         <div class="roadmap-box">
             <h2 class="headline cs-container">Our Project Roadmap</h2>
             <div class="timeline">
                 <div class="box">
-                    <h1 class="serial ms-45">01</h1>
+                    <div class="serial"><h1 class="number ms-45">01</h1></div>
                     <div class="details">
                         <h5 class="title">A Lorem Ipsum is Simply</h5>
                         <p class="description">A Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's  standard dummy text ever since the 1500s, when an unknown</p>
                     </div>
                 </div>
                 <div class="box">
-                    <h1 class="serial me-45">02</h1>
+                    <div class="serial"><h1 class="number me-45">02</h1></div>
                     <div class="details">
                         <h5 class="title">A Lorem Ipsum is Simply</h5>
                         <p class="description">A Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's  standard dummy text ever since the 1500s, when an unknown</p>
                     </div>
                 </div>
                 <div class="box">
-                    <h1 class="serial ms-45">03</h1>
+                    <div class="serial"><h1 class="number ms-45">03</h1></div>
                     <div class="details">
                         <h5 class="title">A Lorem Ipsum is Simply</h5>
                         <p class="description">A Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's  standard dummy text ever since the 1500s, when an unknown</p>
                     </div>
                 </div>
                 <div class="box">
-                    <h1 class="serial me-45">04</h1>
+                    <div class="serial"><h1 class="number me-45">04</h1></div>
                     <div class="details">
                         <h5 class="title">A Lorem Ipsum is Simply</h5>
                         <p class="description">A Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's  standard dummy text ever since the 1500s, when an unknown</p>
@@ -127,11 +127,57 @@
             </div>
         </div>
     </div>
-    <div class="our-tokenomics-section">
+    <div class="our-tokenomics-section" id="tokenomics">
         <div class="tokenomics-box cs-container">
             <h2 class="headline">Tokenomics</h2>
             <div class="content">
                 <div class="token-details">
+                    <div class="row dashed-border">
+                        <div class="col-1">
+                            <div class="item"><span class="red-circle"></span></div>
+                        </div>
+                        <div class="col-4">
+                            <div class="item price-box">
+                                <h5 class="title">Lorem</h5>
+                                <p class="value">$27.4 Billions</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item date-box">
+                                <h5 class="title">Lorem Ipsum</h5>
+                                <p class="value">13 Mar 2023</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="item percentage-box">
+                                <h5 class="title">$08,256.04</h5>
+                                <p class="value green-percentage">+$51.19 (+5.64%)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row dashed-border">
+                        <div class="col-1">
+                            <div class="item"><span class="red-circle"></span></div>
+                        </div>
+                        <div class="col-4">
+                            <div class="item price-box">
+                                <h5 class="title">Lorem</h5>
+                                <p class="value">$27.4 Billions</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item date-box">
+                                <h5 class="title">Lorem Ipsum</h5>
+                                <p class="value">13 Mar 2023</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="item percentage-box">
+                                <h5 class="title">$08,256.04</h5>
+                                <p class="value green-percentage">+$51.19 (+5.64%)</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row dashed-border">
                         <div class="col-1">
                             <div class="item"><span class="red-circle"></span></div>
@@ -169,30 +215,44 @@
             <div class="quotes">
                 Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet, lectus aliquam est in neque.
             </div>
-            <div class="question-boxes">
-                <div class="box">
-                    <div class="question">
-                        <h5>Lorem Ipsum is a simply ?</h5>
-                        <div class="extend-button">
-
-                        </div>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
-                    <div class="answer">
-                            
-                    </div>
+                  </div>
                 </div>
-                <div class="box">
-                    <div class="question">
-                        <h5>Lorem Ipsum is a simply lorem ?</h5>
-                        <span class="extend-button">
-
-                        </span>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
-                    <div class="answer">
-                            
-                    </div>
+                  </div>
                 </div>
-            </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
         <div class="free-circle">
 
@@ -200,7 +260,7 @@
     </div>
 
     <footer class="footer">
-        <div class="container content cs-container">
+        <div class="content cs-container">
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                     <div class="column">
@@ -253,9 +313,10 @@
                     </div>
                     <div class="social-box">
                         <ul class="social-list">
-                            <li><a>f</a></li>
-                            <li><a>t</a></li>
-                            <li><a>d</a></li>
+                            <li><a><img src="./images/socials/discord.svg" alt="discord-icon" /></a></li>
+                            <li><a><img src="./images/socials/github.svg" alt="github-icon" /></a></li>
+                            <li><a><img src="./images/socials/telegram.svg" alt="telegram-icon" /></a></li>
+                            <li><a><img src="./images/socials/twitter.svg" alt="twitter-icon" /></a></li>
                         </ul>
                     </div>
                 </div>
