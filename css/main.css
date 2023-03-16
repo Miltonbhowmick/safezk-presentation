@@ -392,9 +392,9 @@ ul{
     background: linear-gradient(270deg, #40D8AB 0%, #35A8E1 100%);
     border-radius: 8px;
     border: none;
-    padding: 6px 15px;
+    padding: 8px 35px;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     letter-spacing: 0.05em;
     color: #FFFFFF;
 }
@@ -427,6 +427,10 @@ ul{
     .our-service-section .service-box h5{
         font-size: 14px;
         text-align: center;
+    }
+    .our-service-section .service-box button{
+        padding: 6px 18px;
+        font-size: 16px;
     }
 }
 /* END SERVICE SECTION */
