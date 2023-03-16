@@ -771,8 +771,11 @@ ul{
     background: #060606;
     color: #FFFFFF;
 }
+.accordion-button:not(.collapsed)::after {
+    background-image: url("../images/white_arrow.svg");
+}
 .accordion-button::after{
-    
+    background-image: url("../images/white_arrow.svg");    
 }
 @media (max-width:769px) {
     .accordion{
