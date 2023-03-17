@@ -180,13 +180,15 @@ ul{
         flex-direction: row;
         align-items: center;
         margin-top: 40px;
+        gap: 3px;
     }
     .mobile-navbar .menus .price-box img{
-        width: 3%;
+        width: 15px;
+        height: 15px;
     }
     .mobile-navbar .menus .price-box .value{
         font-weight: 500;
-        font-size: 20px;
+        font-size: 15px;
         line-height: 20px;
         color: #ACACAC;
     }
