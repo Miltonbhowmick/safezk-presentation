@@ -110,6 +110,7 @@ ul{
     font-weight: 700;
     font-size: 16px;
     color: #FFFFFF;
+    animation: border-glowing 1500ms infinite;
 }
 
 /* RESPONSIVE */
@@ -203,6 +204,7 @@ ul{
         font-weight: 700;
         font-size: 16px;
         color: #FFFFFF;
+        animation: border-glowing 1500ms infinite;
     }
     .mobile-navbar .hamburger-icon{
         /* position: absolute; */
@@ -262,6 +264,7 @@ ul{
     font-weight: 700;
     font-size: 28px;
     color: #FFFFFF;
+    animation: glowing 1500ms infinite;
 }
 
 @media (max-width:769px) {
@@ -547,11 +550,12 @@ ul{
     font-size: 18px;
     color: #80AB9E;
     margin-bottom: 0;
+    text-align: justify;
 }
-.roadmap-box .timeline .box:nth-child(even) .details .description{
+.roadmap-box .timeline .box:nth-child(even) .details {
     margin-left: 30vw;
 }
-.roadmap-box .timeline .box:nth-child(odd) .details .description{
+.roadmap-box .timeline .box:nth-child(odd) .details {
     margin-right: 30vw;
 }
 .ms-45{
@@ -577,10 +581,10 @@ ul{
     .roadmap-box .timeline .box .details .description{
         font-size: 16px;
     }
-    .roadmap-box .timeline .box:nth-child(even) .details .description{
+    .roadmap-box .timeline .box:nth-child(even) .details {
         margin-left: 100px;
     }
-    .roadmap-box .timeline .box:nth-child(odd) .details .description{
+    .roadmap-box .timeline .box:nth-child(odd) .details {
         margin-right: 100px;
     }    
 }
@@ -604,10 +608,10 @@ ul{
     .roadmap-box .timeline .box .details .description{
         font-size: 12px;
     }
-    .roadmap-box .timeline .box:nth-child(even) .details .description{
+    .roadmap-box .timeline .box:nth-child(even) .details {
         margin-left: 30px;
     }
-    .roadmap-box .timeline .box:nth-child(odd) .details .description{
+    .roadmap-box .timeline .box:nth-child(odd) .details {
         margin-right: 30px;
     }   
 }
@@ -621,6 +625,12 @@ ul{
     .roadmap-box .timeline .box:nth-child(even){
         margin-right: 25px;
     }
+    .roadmap-box .timeline .box:nth-child(even) .details {
+        margin-left: 30px;
+    }
+    .roadmap-box .timeline .box:nth-child(odd) .details {
+        margin-right: 30px;
+    }   
 
 }
 /* END ROADMAP SECTION */
@@ -979,7 +989,33 @@ ul{
 
 
 
+/* ANIMATION KEYFRAME */
+@keyframes blinkBoxShawdow{
+    50% { box-shadow: 0px 14px 0px #0ff;}
+}
+@keyframes shadow-pulse
+{
+	0% {
+		box-shadow: 0 0 0 0px rgb(3, 169, 244, 0.4);
+	}
+	100% {
+		box-shadow: 0 0 0 12px rgba(3, 169, 244, 0);
+	}
+}
+/* @keyframes glowing {
+    0% { background-color: #35A8E1 ; box-shadow: 0 0 3px #40D8AB; }
+    50% { background-color: #35A8E1 ; box-shadow: 0 0 3px #40D8AB; }
+    100% { background-color: #35A8E1 ; box-shadow: 0 0 3px #40D8AB; }   
+} */
+@keyframes glowing {
+    0% { background-color: #35A8E1; box-shadow: 0 0 3px #40D8AB; }
+    50% { background-color: #35A8E1; box-shadow: 0 0 40px #40D8AB; }
+    100% { background-color: #35A8E1; box-shadow: 0 0 3px #40D8AB; }
+}
+@keyframes border-glowing {
+    0% { background-color: #130F0F; box-shadow: 0 0 3px #40D8AB; }
+    50% { background-color: #130F0F; box-shadow: 0 0 40px #40D8AB; }
+    100% { background-color: #130F0F; box-shadow: 0 0 3px #40D8AB; }
+}
 
-
-
-
+/* ANIMATION KEYFRAME */
