@@ -332,7 +332,7 @@ ul{
 @media (max-width:376px) {
     .hero-section .content{
         top: 15%;
-        gap: 5px;
+        gap: 0px;
         margin: 0px 10vw;
     }
     .hero-section .content h1{
