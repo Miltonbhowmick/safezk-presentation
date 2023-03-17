@@ -550,11 +550,12 @@ ul{
     font-size: 18px;
     color: #80AB9E;
     margin-bottom: 0;
+    text-align: justify;
 }
-.roadmap-box .timeline .box:nth-child(even) .details .description{
+.roadmap-box .timeline .box:nth-child(even) .details {
     margin-left: 30vw;
 }
-.roadmap-box .timeline .box:nth-child(odd) .details .description{
+.roadmap-box .timeline .box:nth-child(odd) .details {
     margin-right: 30vw;
 }
 .ms-45{
@@ -580,10 +581,10 @@ ul{
     .roadmap-box .timeline .box .details .description{
         font-size: 16px;
     }
-    .roadmap-box .timeline .box:nth-child(even) .details .description{
+    .roadmap-box .timeline .box:nth-child(even) .details {
         margin-left: 100px;
     }
-    .roadmap-box .timeline .box:nth-child(odd) .details .description{
+    .roadmap-box .timeline .box:nth-child(odd) .details {
         margin-right: 100px;
     }    
 }
@@ -607,10 +608,10 @@ ul{
     .roadmap-box .timeline .box .details .description{
         font-size: 12px;
     }
-    .roadmap-box .timeline .box:nth-child(even) .details .description{
+    .roadmap-box .timeline .box:nth-child(even) .details {
         margin-left: 30px;
     }
-    .roadmap-box .timeline .box:nth-child(odd) .details .description{
+    .roadmap-box .timeline .box:nth-child(odd) .details {
         margin-right: 30px;
     }   
 }
@@ -624,6 +625,12 @@ ul{
     .roadmap-box .timeline .box:nth-child(even){
         margin-right: 25px;
     }
+    .roadmap-box .timeline .box:nth-child(even) .details {
+        margin-left: 30px;
+    }
+    .roadmap-box .timeline .box:nth-child(odd) .details {
+        margin-right: 30px;
+    }   
 
 }
 /* END ROADMAP SECTION */
