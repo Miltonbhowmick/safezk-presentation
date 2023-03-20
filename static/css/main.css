@@ -43,13 +43,13 @@ ul{
     position: fixed;
     top:0;
     z-index: 9999;
-    /* margin: 0px 30px; */
     width: 100%;
     background: #060606;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    padding: 14px 0px;
 }
 .navbar .nav-menus{
     display: flex;
@@ -1007,8 +1007,9 @@ ul{
 }
 .footer-bottom .donation-box p{
     margin: 0;
-    color: #FFFFFF;
+    font-weight: 200;
     font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
 }
 .social-list{
     list-style-type: none;
