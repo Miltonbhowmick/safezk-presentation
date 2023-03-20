@@ -689,9 +689,10 @@ ul{
 }
 .tokenomics-box .content .token-details .item{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
     height: 100%;
     padding: 10px 0px;
 }
@@ -729,6 +730,35 @@ ul{
     border: 0.5px solid #93C5FD;
     border-radius: 50%;
 }
+.mustard-circle{
+    width: 18px;
+    height: 18px;
+    background: #7E6412;
+    border: 0.5px solid #93C5FD;
+    border-radius: 50%;
+}
+.pixie-powder-circle{
+    width: 18px;
+    height: 18px;
+    background: #7B3A0D;
+    border: 0.5px solid #93C5FD;
+    border-radius: 50%;
+}
+.cataline-blue-circle{
+    width: 18px;
+    height: 18px;
+    background: #233D68;
+    border: 0.5px solid #93C5FD;
+    border-radius: 50%;
+}
+.midnight-green-circle{
+    width: 18px;
+    height: 18px;
+    background: #136431;
+    border: 0.5px solid #93C5FD;
+    border-radius: 50%;
+}
+
 @media (max-width:769px) {
     .our-tokenomics-section{
         margin-top: 80px;
