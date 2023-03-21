@@ -774,6 +774,7 @@ ul{
     .tokenomics-box .content .token-details .item .title{
         font-size: 13px;
         margin: 2px 0px;
+        width: 100%;
     }
     .tokenomics-box .content .token-details .item .value{
         font-size: 12px;
