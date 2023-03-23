@@ -519,6 +519,26 @@ ul{
 }
 /* END SERVICE SECTION */
 
+/* BEGIN ABOUT US SECTION */
+.aboutus-box .box{
+    margin: 65px 0px;
+}
+.aboutus-box .box .headline{
+    font-weight: 800;
+    font-size: 36px;
+    -webkit-text-stroke: 2px #77CFB5;
+    color: #FFFFFF;
+    text-align: center;
+}
+.aboutus-box .box .description{
+    margin: 35px 0px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #80AB9E;
+    text-align: center;
+}
+/* END ABOUT US SECTION */
+
 /* BEGIN ROADMAP SECTION */
 .roadmap-box .headline{
     font-weight: 700;
