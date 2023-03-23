@@ -282,17 +282,21 @@ ul{
 }
 .hero-section .content .launch-link{
     margin-top: 50px;
-    padding: 6px 40px 10px 40px;
     background: linear-gradient(270deg, #40D8AB 0%, #35A8E1 100%);
     box-shadow: 0px 0px 18px -4px #0ff;
-    border-radius: 12px;
+    border-radius: 4px;
     letter-spacing: 0.12em;
     font-weight: 700;
     font-size: 28px;
     color: #FFFFFF;
     animation: glowing 1500ms infinite;
 }
-
+.hero-section .content .launch-link div{
+    padding: 10px 40px 10px 40px;
+    border-radius: 4px;
+    background: rgba(19, 15, 15, 0.75);
+    opacity: .8;
+}
 @media (max-width:769px) {
     .hero-section{
         /* margin-top: 50px; */
@@ -309,10 +313,11 @@ ul{
     .hero-section .content h5{
         font-size: 18px;
     }
-    .hero-section .content .launch-link{
+    .hero-section .content .launch-link div{
         padding: 10px 30px 10px 30px;
         font-size: 22px;
     }
+
 }
 @media (max-width:576px) {
     .hero-section .content{
@@ -330,8 +335,10 @@ ul{
         margin:0;
     }
     .hero-section .content .launch-link{
-        padding: 10px 30px 10px 30px;
         margin-top: 50px;
+    }
+    .hero-section .content .launch-link div{
+        padding: 10px 30px 10px 30px;
         font-size: 24px;
     }
 }
@@ -352,6 +359,8 @@ ul{
     }
     .hero-section .content .launch-link{
         margin-top: 70px;
+    }
+    .hero-section .content .launch-link div{
         font-size: 20px;
     }
 }
@@ -372,8 +381,10 @@ ul{
     }
     .hero-section .content .launch-link{
         margin-top: 70px;
-        font-size: 20px;
+    }
+    .hero-section .content .launch-link div{
         padding: 4px 30px 6px 30px;
+        font-size: 20px;
     }
 }
 /* END HERO SECTION */
