@@ -695,12 +695,12 @@ ul{
 .roadmap-box .timeline .box:nth-child(odd){
     flex-direction: row;
     border-radius: 295.228px 0px 0px 295.228px;
-    margin-left: 60px;
+    margin-left: 150px;
 }
 .roadmap-box .timeline .box:nth-child(even){
     flex-direction: row-reverse;
     border-radius: 0px 295.228px 295.228px 0px;
-    margin-right: 60px;
+    margin-right: 150px;
 }
 .roadmap-box .timeline .box .serial {
     display: flex;
