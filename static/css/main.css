@@ -536,6 +536,15 @@ ul{
     margin-top: 110px;
     margin-bottom: 40px;
 }
+.aboutus-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+.aboutus-box .box {
+    width: 80%;
+}
 .aboutus-box .box .headline{
     font-weight: 800;
     font-size: 36px;
@@ -544,17 +553,23 @@ ul{
     text-align: center;
 }
 .aboutus-box .box .description{
-    margin: 35px 0px;
+    margin-top: 35px;
     font-weight: 400;
     font-size: 16px;
+    line-height: 26px;
     color: #80AB9E;
-    text-align: justify;
+    text-align: center;
 }
 @media (max-width: 769px) {
     .aboutus-box{
         margin-top: 60px;
         margin-bottom: 30px;
+        gap: 25px;
     }
+    .aboutus-box .box {
+        margin: 0;
+        width: 100%;
+    }    
 }
 @media (max-width: 576px) {
     .aboutus-box .box .headline{
@@ -620,6 +635,7 @@ ul{
 .trades-box .cards .box .description{
     font-weight: 400;
     font-size: 14px;
+    line-height: 26px;
     text-align: justify;
     color: #80AB9E;
 }
