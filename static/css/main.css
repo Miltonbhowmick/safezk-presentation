@@ -286,8 +286,6 @@ ul{
     box-shadow: 0px 0px 18px -4px #0ff;
     border-radius: 4px;
     letter-spacing: 0.12em;
-    font-weight: 700;
-    font-size: 28px;
     color: #FFFFFF;
     animation: glowing 1500ms infinite;
 }
@@ -296,6 +294,15 @@ ul{
     border-radius: 4px;
     background: rgba(19, 15, 15, 0.75);
     opacity: .8;
+}
+.hero-section .content .launch-link div h1{
+    background: linear-gradient(270deg, #40D8AB 0%, #35A8E1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0px;
+    text-transform: capitalize;
+    font-size: 22px;
+    margin: 0;
 }
 @media (max-width:769px) {
     .hero-section{
@@ -315,9 +322,10 @@ ul{
     }
     .hero-section .content .launch-link div{
         padding: 10px 30px 10px 30px;
+    }
+    .hero-section .content .launch-link div{
         font-size: 22px;
     }
-
 }
 @media (max-width:576px) {
     .hero-section .content{
@@ -328,7 +336,6 @@ ul{
     .hero-section .content h1{
         font-weight: 700;
         font-size: 26px;
-        -webkit-text-stroke: 1px #77CFB5;
     }
     .hero-section .content h5{
         font-size: 16px;
@@ -339,6 +346,8 @@ ul{
     }
     .hero-section .content .launch-link div{
         padding: 10px 30px 10px 30px;
+    }
+    .hero-section .content .launch-link div{
         font-size: 24px;
     }
 }
@@ -351,7 +360,6 @@ ul{
     .hero-section .content h1{
         font-weight: 700;
         font-size: 20px;
-        -webkit-text-stroke: 1px #77CFB5;
     }
     .hero-section .content h5{
         font-size: 14px;
@@ -360,7 +368,7 @@ ul{
     .hero-section .content .launch-link{
         margin-top: 70px;
     }
-    .hero-section .content .launch-link div{
+    .hero-section .content .launch-link div h1{
         font-size: 20px;
     }
 }
@@ -384,6 +392,8 @@ ul{
     }
     .hero-section .content .launch-link div{
         padding: 4px 30px 6px 30px;
+    }
+    .hero-section .content .launch-link div h1{
         font-size: 20px;
     }
 }
@@ -420,7 +430,7 @@ ul{
 }
 @media (max-width:576px) {
     .market-section{
-        /* margin-top: -30px; */
+        margin-top: 25px;
     }
     .market-section .market-box{
         padding: 20px 40px;
@@ -520,8 +530,9 @@ ul{
 /* END SERVICE SECTION */
 
 /* BEGIN ABOUT US SECTION */
-.aboutus-box .box{
-    margin: 65px 0px;
+.aboutus-box{
+    margin-top: 110px;
+    margin-bottom: 110px;
 }
 .aboutus-box .box .headline{
     font-weight: 800;
@@ -536,6 +547,12 @@ ul{
     font-size: 16px;
     color: #80AB9E;
     text-align: center;
+}
+@media (max-width: 769px) {
+    .aboutus-box{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
 }
 /* END ABOUT US SECTION */
 
@@ -561,6 +578,12 @@ ul{
     border-radius: 4px;
     background: rgba(19, 15, 15, 0.75);
     opacity: .8;
+}
+.trades-box .launch-link div h1{
+    background: linear-gradient(270deg, #40D8AB 0%, #35A8E1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
 }
 .trades-box .cards{
     margin-top: 20px;
@@ -592,10 +615,22 @@ ul{
     .trades-box .cards{
         grid-template-columns: 100%;
     }
+    .trades-box .launch-link div{
+        padding: 10px 30px 10px 30px;
+    }
+
 }
 @media (max-width: 576px) {
     .trades-box .cards .box .description{
         font-size: 12px;
+    }
+}
+@media (max-width: 376px) {
+    .trades-box .launch-link div{
+        padding: 4px 30px 6px 30px;
+    }
+    .trades-box .launch-link div h1{
+        font-size: 20px;
     }
 }
 
@@ -604,6 +639,7 @@ ul{
 /* BEGIN ROADMAP SECTION */
 .roadmap-box{
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 .roadmap-box .headline{
     font-weight: 700;
@@ -642,8 +678,9 @@ ul{
 .roadmap-box .timeline .box .serial .number{
     font-size: 6.5rem;
     margin-bottom: 0;
-    color: #070C0B;
-    -webkit-text-stroke: 2px #1F4439;
+    /* color: #070C0B; */
+    /* -webkit-text-stroke: 2px #1F4439; */
+    color: #40D7AC;
 }
 .roadmap-box .timeline .box .details{
     display: flex;
@@ -664,7 +701,7 @@ ul{
 .roadmap-box .timeline .box .details .title{
     font-weight: 400;
     font-size: 24px;
-    color: #FFFFFF;
+    color: #40D7AC;
 }
 
 .roadmap-box .timeline .box .details .description{
@@ -672,7 +709,7 @@ ul{
     font-size: 18px;
     color: #80AB9E;
     margin-bottom: 0;
-    text-align: justify;
+    /* text-align: justify; */
 }
 .roadmap-box .timeline .box:nth-child(even) .details {
     margin-left: 30vw;
@@ -689,6 +726,7 @@ ul{
 @media (max-width:769px) {
     .roadmap-box{
         margin-top: 70px;
+        margin-bottom: 70px;
     }
     .roadmap-box .headline{
         text-align: center;
@@ -1076,6 +1114,7 @@ ul{
     height: 30px;
     background: linear-gradient(270deg, #40D8AB 0%, #35A8E1 100%);
     border-radius: 8px;
+    border: none;
     color: #FFFFFF;
     font-weight: 500;
     font-size: 14px;
