@@ -539,6 +539,68 @@ ul{
 }
 /* END ABOUT US SECTION */
 
+/* BEGIN TRADES SECTION */
+.trades-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.trades-box .launch-link{
+    margin: 60px 0px;
+    background: linear-gradient(270deg, #40D8AB 0%, #35A8E1 100%);
+    box-shadow: 0px 0px 18px -4px #0ff;
+    border-radius: 4px;
+    letter-spacing: 0.12em;
+    font-weight: 700;
+    font-size: 28px;
+    color: #FFFFFF;
+    animation: glowing 1500ms infinite;
+}
+.trades-box .launch-link div{
+    padding: 10px 40px 10px 40px;
+    border-radius: 4px;
+    background: rgba(19, 15, 15, 0.75);
+    opacity: .8;
+}
+.trades-box .cards{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+.trades-box .cards .box{
+    background: rgba(24, 63, 53, 0.4);
+    border-radius: 8px;
+    padding: 40px 30px;
+}
+.trades-box .cards .box .headline{
+    margin: 0px 0px 35px 0px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #80AB9E;
+}
+.trades-box .cards .box .description{
+    font-weight: 400;
+    font-size: 14px;
+    text-align: justify;
+    color: #80AB9E;
+}
+
+@media (max-width: 769px) {
+    .trades-box .cards{
+        grid-template-columns: 100%;
+    }
+}
+@media (max-width: 576px) {
+    .trades-box .cards .box .description{
+        font-size: 12px;
+    }
+}
+
+/* END TRADES SECTION */
+
 /* BEGIN ROADMAP SECTION */
 .roadmap-box .headline{
     font-weight: 700;
