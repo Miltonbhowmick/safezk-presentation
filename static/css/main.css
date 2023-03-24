@@ -13,8 +13,8 @@ ul{
     margin-left: 0;
 }
 .cs-container{
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 @media (max-width: 769px) {
     .cs-container{
@@ -39,15 +39,17 @@ ul{
 .mobile-navbar{
     display: none;
 }
-.navbar{
+.header-wrapper{
     position: fixed;
     top:0;
     z-index: 9999;
     width: 100%;
     background: #060606;
+}
+.navbar{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 14px 0px;
 }
