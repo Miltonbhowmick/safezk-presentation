@@ -455,6 +455,12 @@ ul{
     }
 }
 @media (max-width:576px) {
+    .market-section .m-s-4{
+        margin-left: .3rem;
+    }    
+    .market-section .m-e-4{
+        margin-right: .3rem;
+    } 
     .market-section{
         margin-top: 25px;
         padding: 15px 0px;
@@ -462,8 +468,8 @@ ul{
     .market-section .market-box{
         text-align: center;
     }
-    .market-section .market-box .item .name{
-        font-size: 14px;
+    .market-section .market-box .item img{
+        width: 90%;
     }
 }
 @media (max-width:431px) {
@@ -471,7 +477,7 @@ ul{
         padding: 10px 0px;
     }
     .market-section .market-box .item img{
-        width: 80%;
+        width: 90%;
     }
 }
 @media (max-width:376px) {
