@@ -532,7 +532,7 @@ ul{
 /* BEGIN ABOUT US SECTION */
 .aboutus-box{
     margin-top: 110px;
-    margin-bottom: 110px;
+    margin-bottom: 40px;
 }
 .aboutus-box .box .headline{
     font-weight: 800;
@@ -546,12 +546,22 @@ ul{
     font-weight: 400;
     font-size: 16px;
     color: #80AB9E;
-    text-align: center;
+    text-align: justify;
 }
 @media (max-width: 769px) {
     .aboutus-box{
         margin-top: 60px;
-        margin-bottom: 60px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 576px) {
+    .aboutus-box .box .headline{
+        font-weight: 500;
+        font-size: 24px;
+        -webkit-text-stroke: .5px #77CFB5;
+    }
+    .aboutus-box .box .description{
+        font-size: 12px;
     }
 }
 /* END ABOUT US SECTION */
@@ -584,6 +594,7 @@ ul{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0;
+    font-size: 28px;
 }
 .trades-box .cards{
     margin-top: 20px;
@@ -624,13 +635,16 @@ ul{
     .trades-box .cards .box .description{
         font-size: 12px;
     }
+    .trades-box .launch-link{
+        margin: 40px 0px;
+    }
+    .trades-box .launch-link div h1{
+        font-size: 20px;
+    }
 }
 @media (max-width: 376px) {
     .trades-box .launch-link div{
         padding: 4px 30px 6px 30px;
-    }
-    .trades-box .launch-link div h1{
-        font-size: 20px;
     }
 }
 
