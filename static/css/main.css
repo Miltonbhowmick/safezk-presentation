@@ -562,7 +562,7 @@ ul{
 }
 @media (max-width: 769px) {
     .aboutus-box{
-        margin-top: 60px;
+        margin-top: 40px;
         margin-bottom: 30px;
         gap: 25px;
     }
@@ -654,7 +654,8 @@ ul{
         font-size: 12px;
     }
     .trades-box .launch-link{
-        margin: 40px 0px;
+        margin-top: 10px;
+        margin-bottom: 40px;
     }
     .trades-box .launch-link div h1{
         font-size: 20px;
