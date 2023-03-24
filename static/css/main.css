@@ -602,6 +602,9 @@ ul{
 /* END TRADES SECTION */
 
 /* BEGIN ROADMAP SECTION */
+.roadmap-box{
+    margin-top: 100px;
+}
 .roadmap-box .headline{
     font-weight: 700;
     font-size: 44px;
@@ -684,6 +687,9 @@ ul{
     margin-right: 45px;
 }
 @media (max-width:769px) {
+    .roadmap-box{
+        margin-top: 70px;
+    }
     .roadmap-box .headline{
         text-align: center;
         font-size: 35px;
@@ -816,38 +822,38 @@ ul{
 .red-percentage{
     color: #DC2626 !important;
 }
-.red-circle{
+.marketing-circle{
     width: 18px;
     height: 18px;
-    background: #7D1A1A;
+    background: #43A3AE;;
     border: 0.5px solid #93C5FD;
     border-radius: 50%;
 }
 .mustard-circle{
     width: 18px;
     height: 18px;
-    background: #7E6412;
+    background: #2782AC;
     border: 0.5px solid #93C5FD;
     border-radius: 50%;
 }
 .pixie-powder-circle{
     width: 18px;
     height: 18px;
-    background: #7B3A0D;
+    background: #6F9388;
     border: 0.5px solid #93C5FD;
     border-radius: 50%;
 }
 .cataline-blue-circle{
     width: 18px;
     height: 18px;
-    background: #233D68;
+    background: #394B62;
     border: 0.5px solid #93C5FD;
     border-radius: 50%;
 }
 .midnight-green-circle{
     width: 18px;
     height: 18px;
-    background: #136431;
+    background: #33A989;
     border: 0.5px solid #93C5FD;
     border-radius: 50%;
 }
