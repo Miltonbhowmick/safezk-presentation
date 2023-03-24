@@ -282,17 +282,28 @@ ul{
 }
 .hero-section .content .launch-link{
     margin-top: 50px;
-    padding: 6px 40px 10px 40px;
     background: linear-gradient(270deg, #40D8AB 0%, #35A8E1 100%);
     box-shadow: 0px 0px 18px -4px #0ff;
-    border-radius: 12px;
+    border-radius: 4px;
     letter-spacing: 0.12em;
-    font-weight: 700;
-    font-size: 28px;
     color: #FFFFFF;
     animation: glowing 1500ms infinite;
 }
-
+.hero-section .content .launch-link div{
+    padding: 10px 40px 10px 40px;
+    border-radius: 4px;
+    background: rgba(19, 15, 15, 0.75);
+    opacity: .8;
+}
+.hero-section .content .launch-link div h1{
+    background: linear-gradient(270deg, #40D8AB 0%, #35A8E1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0px;
+    text-transform: capitalize;
+    font-size: 22px;
+    margin: 0;
+}
 @media (max-width:769px) {
     .hero-section{
         /* margin-top: 50px; */
@@ -309,8 +320,10 @@ ul{
     .hero-section .content h5{
         font-size: 18px;
     }
-    .hero-section .content .launch-link{
+    .hero-section .content .launch-link div{
         padding: 10px 30px 10px 30px;
+    }
+    .hero-section .content .launch-link div{
         font-size: 22px;
     }
 }
@@ -323,15 +336,18 @@ ul{
     .hero-section .content h1{
         font-weight: 700;
         font-size: 26px;
-        -webkit-text-stroke: 1px #77CFB5;
     }
     .hero-section .content h5{
         font-size: 16px;
         margin:0;
     }
     .hero-section .content .launch-link{
-        padding: 10px 30px 10px 30px;
         margin-top: 50px;
+    }
+    .hero-section .content .launch-link div{
+        padding: 10px 30px 10px 30px;
+    }
+    .hero-section .content .launch-link div{
         font-size: 24px;
     }
 }
@@ -344,7 +360,6 @@ ul{
     .hero-section .content h1{
         font-weight: 700;
         font-size: 20px;
-        -webkit-text-stroke: 1px #77CFB5;
     }
     .hero-section .content h5{
         font-size: 14px;
@@ -352,6 +367,8 @@ ul{
     }
     .hero-section .content .launch-link{
         margin-top: 70px;
+    }
+    .hero-section .content .launch-link div h1{
         font-size: 20px;
     }
 }
@@ -372,8 +389,12 @@ ul{
     }
     .hero-section .content .launch-link{
         margin-top: 70px;
-        font-size: 20px;
+    }
+    .hero-section .content .launch-link div{
         padding: 4px 30px 6px 30px;
+    }
+    .hero-section .content .launch-link div h1{
+        font-size: 20px;
     }
 }
 /* END HERO SECTION */
@@ -409,7 +430,7 @@ ul{
 }
 @media (max-width:576px) {
     .market-section{
-        /* margin-top: -30px; */
+        margin-top: 25px;
     }
     .market-section .market-box{
         padding: 20px 40px;
@@ -508,7 +529,132 @@ ul{
 }
 /* END SERVICE SECTION */
 
+/* BEGIN ABOUT US SECTION */
+.aboutus-box{
+    margin-top: 110px;
+    margin-bottom: 40px;
+}
+.aboutus-box .box .headline{
+    font-weight: 800;
+    font-size: 36px;
+    -webkit-text-stroke: 2px #77CFB5;
+    color: #FFFFFF;
+    text-align: center;
+}
+.aboutus-box .box .description{
+    margin: 35px 0px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #80AB9E;
+    text-align: justify;
+}
+@media (max-width: 769px) {
+    .aboutus-box{
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 576px) {
+    .aboutus-box .box .headline{
+        font-weight: 500;
+        font-size: 24px;
+        -webkit-text-stroke: .5px #77CFB5;
+    }
+    .aboutus-box .box .description{
+        font-size: 12px;
+    }
+}
+/* END ABOUT US SECTION */
+
+/* BEGIN TRADES SECTION */
+.trades-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.trades-box .launch-link{
+    margin: 60px 0px;
+    background: linear-gradient(270deg, #40D8AB 0%, #35A8E1 100%);
+    box-shadow: 0px 0px 18px -4px #0ff;
+    border-radius: 4px;
+    letter-spacing: 0.12em;
+    font-weight: 700;
+    font-size: 28px;
+    color: #FFFFFF;
+    animation: glowing 1500ms infinite;
+}
+.trades-box .launch-link div{
+    padding: 10px 40px 10px 40px;
+    border-radius: 4px;
+    background: rgba(19, 15, 15, 0.75);
+    opacity: .8;
+}
+.trades-box .launch-link div h1{
+    background: linear-gradient(270deg, #40D8AB 0%, #35A8E1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    font-size: 28px;
+}
+.trades-box .cards{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+.trades-box .cards .box{
+    background: rgba(24, 63, 53, 0.4);
+    border-radius: 8px;
+    padding: 40px 30px;
+}
+.trades-box .cards .box .headline{
+    margin: 0px 0px 35px 0px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #80AB9E;
+}
+.trades-box .cards .box .description{
+    font-weight: 400;
+    font-size: 14px;
+    text-align: justify;
+    color: #80AB9E;
+}
+
+@media (max-width: 769px) {
+    .trades-box .cards{
+        grid-template-columns: 100%;
+    }
+    .trades-box .launch-link div{
+        padding: 10px 30px 10px 30px;
+    }
+
+}
+@media (max-width: 576px) {
+    .trades-box .cards .box .description{
+        font-size: 12px;
+    }
+    .trades-box .launch-link{
+        margin: 40px 0px;
+    }
+    .trades-box .launch-link div h1{
+        font-size: 20px;
+    }
+}
+@media (max-width: 376px) {
+    .trades-box .launch-link div{
+        padding: 4px 30px 6px 30px;
+    }
+}
+
+/* END TRADES SECTION */
+
 /* BEGIN ROADMAP SECTION */
+.roadmap-box{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 .roadmap-box .headline{
     font-weight: 700;
     font-size: 44px;
@@ -546,8 +692,9 @@ ul{
 .roadmap-box .timeline .box .serial .number{
     font-size: 6.5rem;
     margin-bottom: 0;
-    color: #070C0B;
-    -webkit-text-stroke: 2px #1F4439;
+    /* color: #070C0B; */
+    /* -webkit-text-stroke: 2px #1F4439; */
+    color: #40D7AC;
 }
 .roadmap-box .timeline .box .details{
     display: flex;
@@ -568,7 +715,7 @@ ul{
 .roadmap-box .timeline .box .details .title{
     font-weight: 400;
     font-size: 24px;
-    color: #FFFFFF;
+    color: #40D7AC;
 }
 
 .roadmap-box .timeline .box .details .description{
@@ -576,7 +723,7 @@ ul{
     font-size: 18px;
     color: #80AB9E;
     margin-bottom: 0;
-    text-align: justify;
+    /* text-align: justify; */
 }
 .roadmap-box .timeline .box:nth-child(even) .details {
     margin-left: 30vw;
@@ -591,6 +738,10 @@ ul{
     margin-right: 45px;
 }
 @media (max-width:769px) {
+    .roadmap-box{
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
     .roadmap-box .headline{
         text-align: center;
         font-size: 35px;
@@ -723,38 +874,38 @@ ul{
 .red-percentage{
     color: #DC2626 !important;
 }
-.red-circle{
+.marketing-circle{
     width: 18px;
     height: 18px;
-    background: #7D1A1A;
+    background: #43A3AE;;
     border: 0.5px solid #93C5FD;
     border-radius: 50%;
 }
 .mustard-circle{
     width: 18px;
     height: 18px;
-    background: #7E6412;
+    background: #2782AC;
     border: 0.5px solid #93C5FD;
     border-radius: 50%;
 }
 .pixie-powder-circle{
     width: 18px;
     height: 18px;
-    background: #7B3A0D;
+    background: #6F9388;
     border: 0.5px solid #93C5FD;
     border-radius: 50%;
 }
 .cataline-blue-circle{
     width: 18px;
     height: 18px;
-    background: #233D68;
+    background: #394B62;
     border: 0.5px solid #93C5FD;
     border-radius: 50%;
 }
 .midnight-green-circle{
     width: 18px;
     height: 18px;
-    background: #136431;
+    background: #33A989;
     border: 0.5px solid #93C5FD;
     border-radius: 50%;
 }
@@ -977,6 +1128,7 @@ ul{
     height: 30px;
     background: linear-gradient(270deg, #40D8AB 0%, #35A8E1 100%);
     border-radius: 8px;
+    border: none;
     color: #FFFFFF;
     font-weight: 500;
     font-size: 14px;
