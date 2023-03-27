@@ -522,16 +522,29 @@ ul{
     color: #FFFFFF;
     text-transform: capitalize;
 }
-.our-service-section .service-box button{
-    margin-top: 10px;
+.our-service-section .service-box .see-more-link{
+    margin: 15px 0px;
     background: linear-gradient(270deg, #40D8AB 0%, #35A8E1 100%);
-    border-radius: 8px;
-    border: none;
-    padding: 8px 35px;
-    font-weight: 500;
-    font-size: 20px;
-    letter-spacing: 0.05em;
+    box-shadow: 0px 0px 18px -4px #0ff;
+    border-radius: 4px;
+    letter-spacing: 0.12em;
     color: #FFFFFF;
+    animation: glowing 1500ms infinite;
+}
+.our-service-section .service-box .see-more-link div{
+    padding: 10px 40px 10px 40px;
+    border-radius: 4px;
+    background: rgba(19, 15, 15, 0.75);
+    opacity: .8;
+}
+.our-service-section .service-box .see-more-link div h1{
+    background: linear-gradient(270deg, #40D8AB 0%, #35A8E1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0px;
+    text-transform: capitalize;
+    font-size: 22px;
+    margin: 0;
 }
 @media (max-width:769px) {
     .our-service-section{
@@ -566,6 +579,12 @@ ul{
     .our-service-section .service-box button{
         padding: 6px 18px;
         font-size: 16px;
+    }
+    .our-service-section .service-box .see-more-link div{
+        padding: 6px 35px 11px 35px;
+    }
+    .our-service-section .service-box .see-more-link div h1{
+        font-size: 22px;
     }
 }
 /* END SERVICE SECTION */
@@ -1208,6 +1227,7 @@ ul{
     font-weight: 600;
     font-size: 28px;
     color: #FFFFFF;
+    -webkit-text-stroke: 2px #77CFB5;
 }
 .footer .content .subscribe-box .subscribe-email {
     display: flex;
@@ -1300,6 +1320,9 @@ ul{
     }
     .footer .content .subscribe-box .subscribe-email {
         width: 100%;
+    }
+    .footer .content .subscribe-box .title{
+        -webkit-text-stroke: 1px #77CFB5;
     }
 }
 
