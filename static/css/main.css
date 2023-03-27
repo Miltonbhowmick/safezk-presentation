@@ -538,14 +538,15 @@ ul{
 .our-service-section .service-box h2{
     font-weight: 700;
     font-size: 44px;
-    color: #FFFFFF;
     text-transform: capitalize;
+    color: #FFFFFF;
+    -webkit-text-stroke: 2px #77CFB5;
 }
 .our-service-section .service-box h5{
     font-weight: 300;
     font-size: 24px;
-    color: #FFFFFF;
     text-transform: capitalize;
+    color: #80AB9E;
 }
 .our-service-section .service-box .see-more-link{
     margin: 15px 0px;
