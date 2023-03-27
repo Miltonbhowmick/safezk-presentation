@@ -333,6 +333,9 @@ ul{
     font-size: 22px;
     margin: 0;
 }
+.hero-section .content .hero-buttons .stop-animation{
+    animation: unset;    
+}
 @media (max-width:769px) {
     .hero-section{
         /* margin-top: 50px; */
@@ -351,7 +354,7 @@ ul{
     }
     .hero-section .content .hero-buttons{
         flex-direction: column;
-        gap: 10px;
+        gap: 30px;
     }
     .hero-section .content .hero-buttons .launch-link div{
         padding: 10px 30px 10px 30px;
