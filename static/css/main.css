@@ -1329,6 +1329,35 @@ ul{
 /* END FOOTER */
 
 
+/* BEGIN UNDER CONSTRUCTION SECTION */
+.under-construction{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.under-construction .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.under-construction .box img{
+    width: 100%;
+}
+.under-construction .box .headline{
+    font-weight: 700;
+    font-size: 24px;
+    color: #40D7AC;
+}
+.under-construction .box .description{
+    font-weight: 600;
+    font-size: 20px;
+    color: #40D7AC;
+}
+/* END UNDER CONSTRUCTION SECTION */
 
 /* ANIMATION KEYFRAME */
 @keyframes blinkBoxShawdow{
