@@ -16,10 +16,16 @@ ul{
     margin-left: 150px;
     margin-right: 150px;
 }
+.mobile-view{
+    display: none;
+}
 @media (max-width: 769px) {
     .cs-container{
         margin-left: 40px;
         margin-right: 40px;
+    }
+    .mobile-view{
+        display: block;
     }
 }
 @media (max-width: 576px) {
@@ -257,6 +263,22 @@ ul{
     align-items: center;
     margin: 0px 17vw;
 }
+.hero-section .content .social-box{
+    margin-bottom: 25px;
+}
+.hero-section .content .social-box .social-list{
+    list-style-type: none;
+}
+.hero-section .content .social-box .social-list li{
+    display: inline;
+    margin: 0px 3px;
+}
+.hero-section .content .social-box .social-list li a{
+    padding: 8px 12px 13px 12px;
+    border: 1px solid #373A51;
+    border-radius: 8px;
+    cursor: pointer;
+}
 .hero-section .content h1{
     text-align: center;
     font-weight: 700;
@@ -278,12 +300,17 @@ ul{
 .hero-section .content h5{
     margin: 0px 7vw;
     text-align: center;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 20px;
     color: #FFFFFF;
 }
-.hero-section .content .launch-link{
+.hero-section .content .hero-buttons{
     margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.hero-section .content .hero-buttons .launch-link{
     background: linear-gradient(270deg, #40D8AB 0%, #35A8E1 100%);
     box-shadow: 0px 0px 18px -4px #0ff;
     border-radius: 4px;
@@ -291,13 +318,13 @@ ul{
     color: #FFFFFF;
     animation: glowing 1500ms infinite;
 }
-.hero-section .content .launch-link div{
+.hero-section .content .hero-buttons .launch-link div{
     padding: 10px 40px 10px 40px;
     border-radius: 4px;
     background: rgba(19, 15, 15, 0.75);
     opacity: .8;
 }
-.hero-section .content .launch-link div h1{
+.hero-section .content .hero-buttons .launch-link div h1{
     background: linear-gradient(270deg, #40D8AB 0%, #35A8E1 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -305,6 +332,9 @@ ul{
     text-transform: capitalize;
     font-size: 22px;
     margin: 0;
+}
+.hero-section .content .hero-buttons .stop-animation{
+    animation: unset;    
 }
 @media (max-width:769px) {
     .hero-section{
@@ -322,10 +352,14 @@ ul{
     .hero-section .content h5{
         font-size: 18px;
     }
-    .hero-section .content .launch-link div{
+    .hero-section .content .hero-buttons{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .hero-section .content .hero-buttons .launch-link div{
         padding: 10px 30px 10px 30px;
     }
-    .hero-section .content .launch-link div{
+    .hero-section .content .hero-buttons .launch-link div{
         font-size: 22px;
     }
 }
@@ -343,13 +377,13 @@ ul{
         font-size: 16px;
         margin:0;
     }
-    .hero-section .content .launch-link{
+    .hero-section .content .hero-buttons{
         margin-top: 50px;
     }
-    .hero-section .content .launch-link div{
+    .hero-section .content .hero-buttons .launch-link div{
         padding: 10px 30px 10px 30px;
     }
-    .hero-section .content .launch-link div{
+    .hero-section .content .hero-buttons .launch-link div{
         font-size: 24px;
     }
 }
@@ -367,10 +401,10 @@ ul{
         font-size: 14px;
         margin: 0;
     }
-    .hero-section .content .launch-link{
+    .hero-section .content .hero-buttons{
         margin-top: 70px;
     }
-    .hero-section .content .launch-link div h1{
+    .hero-section .content .hero-buttons .launch-link div h1{
         font-size: 20px;
     }
 }
@@ -389,13 +423,13 @@ ul{
         font-size: 14px;
         margin: 0;
     }
-    .hero-section .content .launch-link{
+    .hero-section .content .hero-buttons{
         margin-top: 70px;
     }
-    .hero-section .content .launch-link div{
+    .hero-section .content .hero-buttons .launch-link div{
         padding: 4px 30px 6px 30px;
     }
-    .hero-section .content .launch-link div h1{
+    .hero-section .content .hero-buttons .launch-link div h1{
         font-size: 20px;
     }
 }
@@ -513,16 +547,29 @@ ul{
     color: #FFFFFF;
     text-transform: capitalize;
 }
-.our-service-section .service-box button{
-    margin-top: 10px;
+.our-service-section .service-box .see-more-link{
+    margin: 15px 0px;
     background: linear-gradient(270deg, #40D8AB 0%, #35A8E1 100%);
-    border-radius: 8px;
-    border: none;
-    padding: 8px 35px;
-    font-weight: 500;
-    font-size: 20px;
-    letter-spacing: 0.05em;
+    box-shadow: 0px 0px 18px -4px #0ff;
+    border-radius: 4px;
+    letter-spacing: 0.12em;
     color: #FFFFFF;
+    animation: glowing 1500ms infinite;
+}
+.our-service-section .service-box .see-more-link div{
+    padding: 10px 40px 10px 40px;
+    border-radius: 4px;
+    background: rgba(19, 15, 15, 0.75);
+    opacity: .8;
+}
+.our-service-section .service-box .see-more-link div h1{
+    background: linear-gradient(270deg, #40D8AB 0%, #35A8E1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0px;
+    text-transform: capitalize;
+    font-size: 22px;
+    margin: 0;
 }
 @media (max-width:769px) {
     .our-service-section{
@@ -544,7 +591,7 @@ ul{
     }
     .our-service-section{
         margin-top: 60px;
-        margin-bottom: 50px;
+        margin-bottom: 60px;
     }
     .our-service-section .service-box h2{
         font-size: 22px;
@@ -557,6 +604,12 @@ ul{
     .our-service-section .service-box button{
         padding: 6px 18px;
         font-size: 16px;
+    }
+    .our-service-section .service-box .see-more-link div{
+        padding: 6px 35px 11px 35px;
+    }
+    .our-service-section .service-box .see-more-link div h1{
+        font-size: 22px;
     }
 }
 /* END SERVICE SECTION */
@@ -744,7 +797,7 @@ ul{
     margin-bottom: 0;
     /* color: #070C0B; */
     /* -webkit-text-stroke: 2px #1F4439; */
-    color: #40D7AC;
+    color:  #005C42;
 }
 .roadmap-box .timeline .box .details{
     display: flex;
@@ -831,7 +884,7 @@ ul{
         font-size: 6.5rem;
     }
     .roadmap-box .timeline .box .serial .number{
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
     .roadmap-box .timeline .box .details .title{
         font-size: 16px;
@@ -893,6 +946,13 @@ ul{
 .tokenomics-box .content .token-details{
     width: 100%;
 }
+.tokenomics-box .content .token-details .description{
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
 .tokenomics-box .content .token-details .item{
     display: flex;
     flex-direction: row;
@@ -999,6 +1059,9 @@ ul{
         font-size: 30px;
         -webkit-text-stroke: 1px #77CFB5;
     }
+    .tokenomics-box .content .token-details .description{
+        font-size: 14px;
+    }
 }
 @media (max-width:431px) {
     .tokenomics-box .headline{
@@ -1006,6 +1069,37 @@ ul{
     }
 }
 /* END TOKENOMICS SECTION */
+
+/* BEGIN DISCLAIMER SECTION */
+
+.disclaimer-box{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.disclaimer-box .box{
+    margin: 0px 70px;
+}
+.disclaimer-box .headline{
+    margin: 15px 0px;
+    font-weight: 600;
+    font-size: 20px;
+    -webkit-text-stroke: 1px #77CFB5;
+    color: #FFFFFF;
+    text-align: center;
+}
+.disclaimer-box .description{
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #80AB9E;
+    line-height: 22px;
+}
+@media (max-width: 769px) {
+    .disclaimer-box .box{
+        margin: 0;
+    }
+}
+/* END DISCLAIMER SECTION */
 
 /* BEGIN FAQ SECTION */
 .faq-section{
@@ -1158,6 +1252,7 @@ ul{
     font-weight: 600;
     font-size: 28px;
     color: #FFFFFF;
+    -webkit-text-stroke: 2px #77CFB5;
 }
 .footer .content .subscribe-box .subscribe-email {
     display: flex;
@@ -1207,6 +1302,7 @@ ul{
     font-size: 12px;
     line-height: 20px;
     color: rgba(255, 255, 255, 0.6);
+    text-align: center;
 }
 .footer-bottom{
     display: flex;
@@ -1250,11 +1346,43 @@ ul{
     .footer .content .subscribe-box .subscribe-email {
         width: 100%;
     }
+    .footer .content .subscribe-box .title{
+        -webkit-text-stroke: 1px #77CFB5;
+    }
 }
 
 /* END FOOTER */
 
 
+/* BEGIN UNDER CONSTRUCTION SECTION */
+.under-construction{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.under-construction .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.under-construction .box img{
+    width: 100%;
+}
+.under-construction .box .headline{
+    font-weight: 700;
+    font-size: 24px;
+    color: #40D7AC;
+}
+.under-construction .box .description{
+    font-weight: 600;
+    font-size: 20px;
+    color: #40D7AC;
+}
+/* END UNDER CONSTRUCTION SECTION */
 
 /* ANIMATION KEYFRAME */
 @keyframes blinkBoxShawdow{
