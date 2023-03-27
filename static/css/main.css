@@ -16,10 +16,16 @@ ul{
     margin-left: 150px;
     margin-right: 150px;
 }
+.mobile-view{
+    display: none;
+}
 @media (max-width: 769px) {
     .cs-container{
         margin-left: 40px;
         margin-right: 40px;
+    }
+    .mobile-view{
+        display: block;
     }
 }
 @media (max-width: 576px) {
@@ -256,6 +262,22 @@ ul{
     gap: 22px;
     align-items: center;
     margin: 0px 17vw;
+}
+.hero-section .content .social-box{
+    margin-bottom: 25px;
+}
+.hero-section .content .social-box .social-list{
+    list-style-type: none;
+}
+.hero-section .content .social-box .social-list li{
+    display: inline;
+    margin: 0px 3px;
+}
+.hero-section .content .social-box .social-list li a{
+    padding: 8px 12px 13px 12px;
+    border: 1px solid #373A51;
+    border-radius: 8px;
+    cursor: pointer;
 }
 .hero-section .content h1{
     text-align: center;
