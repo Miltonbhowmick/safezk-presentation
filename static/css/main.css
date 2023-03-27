@@ -349,7 +349,7 @@ ul{
     }
     .hero-section .content{
         /* top: 15%; */
-        gap: 15px;
+        gap: 5px;
         margin: 0px 12vw;
     }
     .hero-section .content h1{
@@ -360,6 +360,7 @@ ul{
         font-size: 18px;
     }
     .hero-section .content .hero-buttons{
+        margin-top: 20px;
         flex-direction: column;
         gap: 30px;
     }
@@ -373,7 +374,7 @@ ul{
 @media (max-width:576px) {
     .hero-section .content{
         /* top: 15%; */
-        gap: 24px;
+        gap: 4px;
         margin: 0px 10vw;
     }
     .hero-section .content h1{
@@ -385,7 +386,7 @@ ul{
         margin:0;
     }
     .hero-section .content .hero-buttons{
-        margin-top: 50px;
+        margin-top: 40px;
     }
     .hero-section .content .hero-buttons .launch-link div{
         padding: 10px 30px 10px 30px;
@@ -397,7 +398,7 @@ ul{
 @media (max-width:431px) {
     .hero-section .content{
         /* top: 15%; */
-        gap: 20px;
+        gap: 4px;
         margin: 0px 10vw;
     }
     .hero-section .content h1{
@@ -409,7 +410,7 @@ ul{
         margin: 0;
     }
     .hero-section .content .hero-buttons{
-        margin-top: 70px;
+        margin-top: 50px;
     }
     .hero-section .content .hero-buttons .launch-link div h1{
         font-size: 20px;
@@ -418,7 +419,7 @@ ul{
 @media (max-width:376px) {
     .hero-section .content{
         /* top: 15%; */
-        gap: 18px;
+        gap: 10px;
         margin: 0px 10vw;
     }
     .hero-section .content h1{
@@ -431,7 +432,7 @@ ul{
         margin: 0;
     }
     .hero-section .content .hero-buttons{
-        margin-top: 70px;
+        margin-top: 50px;
     }
     .hero-section .content .hero-buttons .launch-link div{
         padding: 4px 30px 6px 30px;
