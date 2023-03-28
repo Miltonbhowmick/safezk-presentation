@@ -355,9 +355,11 @@ ul{
     .hero-section .content h1{
         font-weight: 700;
         font-size: 30px;
+        line-height: 35px;
     }
     .hero-section .content h5{
         font-size: 18px;
+        line-height: 35px;
     }
     .hero-section .content .hero-buttons{
         margin-top: 20px;
@@ -380,10 +382,12 @@ ul{
     .hero-section .content h1{
         font-weight: 700;
         font-size: 26px;
+        line-height: 27px;
     }
     .hero-section .content h5{
         font-size: 16px;
         margin:0;
+        line-height: 27px;
     }
     .hero-section .content .hero-buttons{
         margin-top: 40px;
