@@ -48,7 +48,7 @@ ul{
 .header-wrapper{
     position: fixed;
     top:0;
-    z-index: 9999;
+    z-index: 99999;
     width: 100%;
     background: #060606;
 }
@@ -447,7 +447,7 @@ ul{
 .market-section{
     /* margin-top: -70px; */
     position: relative;
-    z-index: 99999;
+    z-index: 9999;
     left: 0;
     right: 0;
     padding: 30px 0px;
