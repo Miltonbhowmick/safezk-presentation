@@ -1425,6 +1425,148 @@ ul{
 }
 /* END UNDER CONSTRUCTION SECTION */
 
+/* BEGIN WHITEPAPER PAGE */
+.table-of-content{
+    margin-top: 85px;
+    margin-bottom: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.table-of-content .headline{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-weight: 800;
+    font-size: 36px;
+    color: #FFFFFF;
+    -webkit-text-stroke: 2px #77CFB5;
+    text-align: center;
+    width: 100%;
+}
+.table-of-content .list-headline{
+    margin-top: 30px;
+    font-weight: 800;
+    font-size: 30px;
+    color: #40D7AC;
+}
+.table-of-content .table-list{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+.table-of-content .table-list li a{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 45px;
+    color: #31C49A;
+    cursor: pointer;
+}
+.table-of-content .table-list li a:hover{
+    color: white;
+}
+.table-of-content .table-list li ul{
+    list-style-type: none;
+    margin-left: 25px;
+}
+.table-of-content .table-list li ul li a{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 45px;
+    cursor: pointer;
+}
+.table-of-content .table-list li ul li a:hover{
+    color: #FFFFFF;
+}
+.table-content .box{
+    margin: 80px 0px;
+}
+.table-content .box .headline{
+    margin: 50px 0px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 28px;
+    color: #40D7AC;
+    text-align: center;
+}
+.table-content .box .description{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #80AB9E;
+}
+.table-content .box ul{
+    margin-left: 35px;
+}
+.table-content .box ul li::marker{
+    content: '- ';
+}
+
+
+.table-content .box .roadmap .date{
+    font-weight: 600;
+    font-size: 16px;
+    color:  #80AB9E;
+}
+
+.table-content .box .roadmap .details{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color:  #80AB9E;
+}
+@media (min-width: 768px) {
+    .table-content .box .roadmap .details::before{
+        content: '- ';
+    
+    }
+}
+@media (max-width: 769px) {
+    .table-of-content .headline{
+        -webkit-text-stroke: 1px #77CFB5;
+    }
+}
+@media (max-width: 576px) {
+    .table-of-content{
+        margin: 40px 0px;
+    }
+    .table-of-content .headline{
+        margin-top: 35px;
+        margin-bottom: 35px;
+        font-size: 30px;
+    }   
+    .table-of-content .list-headline{
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .table-of-content .table-list li a{
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .table-of-content .table-list li ul li a{
+        font-size: 12px;
+        line-height: 30px;
+    }
+    .table-content .box{
+        margin: 40px 0px;
+    }
+    .table-content .box .headline{
+        margin: 25px 0px;
+        font-size: 18px;
+    }
+    .table-content .box .description{
+        font-size: 12px;
+    }
+    .table-content .box .roadmap .date{
+        font-size: 14px;
+    }
+    .table-content .box .roadmap .details{
+        font-size: 14px;
+    }
+}
+/* END WHITEPAPER PAGE */
+
 /* ANIMATION KEYFRAME */
 @keyframes blinkBoxShawdow{
     50% { box-shadow: 0px 14px 0px #0ff;}
