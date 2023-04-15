@@ -1003,10 +1003,17 @@ ul{
 .red-percentage{
     color: #DC2626 !important;
 }
+.rewards-circle{
+    width: 18px;
+    height: 18px;
+    background: #000000;
+    border: 0.5px solid #93C5FD;
+    border-radius: 50%;
+}
 .marketing-circle{
     width: 18px;
     height: 18px;
-    background: #43A3AE;;
+    background: #43A3AE;
     border: 0.5px solid #93C5FD;
     border-radius: 50%;
 }
